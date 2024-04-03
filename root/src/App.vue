@@ -13,6 +13,10 @@
   </main>
 </template>
 <style scoped>
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .app-wrapper {
   display: flex;
   flex-direction: column;
@@ -35,6 +39,7 @@
 }
 
 .nav-bar {
+  padding: 0.5rem;
   border-width: 0px;
   border-right-width: 1px;
   border-style: solid;

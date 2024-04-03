@@ -22,7 +22,7 @@ const store = useCounterStore();
 <template>
   <h3>This counter is from the remote</h3>
   <div class="counter-wrapper">
-    <button @click="store.decrement">-</button>
+    <button :disabled="store.count === 0" @click="store.decrement">-</button>
     {{ store.count }}
     <button @click="store.increment">+</button>
   </div>
